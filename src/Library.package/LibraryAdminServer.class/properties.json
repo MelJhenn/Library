@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Library",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"server"
+	],
+	"instvars" : [ ],
+	"name" : "LibraryAdminServer",
+	"type" : "normal"
+}
