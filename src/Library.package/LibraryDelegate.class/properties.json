@@ -1,16 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ZnStaticFileServerDelegate",
 	"category" : "Library",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"title",
-		"author",
-		"genres",
-		"description"
-	],
-	"name" : "Book",
+	"instvars" : [ ],
+	"name" : "LibraryDelegate",
 	"type" : "normal"
 }
