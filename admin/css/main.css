@@ -12,3 +12,11 @@ section{
     padding: 5px 10px;
     border: 1px solid gray;
 }
+.server-message{
+    padding-top: 30px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    top: 15px;
+    display: none;
+}

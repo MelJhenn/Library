@@ -12,5 +12,23 @@ $(document).ready(function() {
           timer: false,
           transition: [ 'zoomOut', ]
       });
+    });  
+    $("#idForm").submit(function(e) {
+        e.preventDefault(); 
+        var form = $(this);
+        var url = form.attr('action');
+        
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(), 
+            success: function(data){
+                let msg=$('.server-message');
+                msg.show(); 
+                msg.fadeOut (5000);
+                $('#idForm').trigger("reset");
+                $('#book-title').focus().select() 
+            }
+        });
     });
-})  
+}) 

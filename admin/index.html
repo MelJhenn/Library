@@ -30,32 +30,35 @@
 			<div class="row">
 				<div class="col-xs-12 tm-text-white text-xs-center">
 					<h2 class="tm-section-3-title">New Books Here!</h2>
-					<p class="tm-section-3-description">"I do believe something very magical can happen when you read a good book." -JK Rowling.</p>
+					<p class="tm-section-3-description">"I do believe something very magical can happen when you read a good book." <br>-JK Rowling.</p>
 				</div>
 			</div>
 			<div class="row">
-				<form action="newBook" method="post" class="tm-contact-form">
+				<form id="idForm" action="newBook" method="post" class="tm-contact-form">
 					
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 						<div class="form-group">
-							<input type="text" id="contact_name" name="title" class="form-control" placeholder="Title" required/>
+							<input type="text" id="book-title" name="title" class="form-control" placeholder="Title" required/>
 						</div>
 						<div class="form-group">
-							<input type="text" id="contact_email" name="author" class="form-control" placeholder="Author" required/>
+							<input type="text" id="book-author" name="author" class="form-control" placeholder="Author" required/>
 						</div>
 						<div class="form-group">
-							<input type="text" id="contact_subject" name="genres" class="form-control" placeholder="Genres" required/>
+							<input type="text" id="book-genre" name="genres" class="form-control" placeholder="Genres" required/>
 						</div>    
 					</div>
 
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 						<div class="form-group">
-							<textarea id="contact_message" name="description" class="form-control" rows="6" placeholder="Description" required></textarea>
+							<textarea id="book-description" name="description" class="form-control" rows="6" placeholder="Description" required></textarea>
 						</div>    
 					</div>
 
 					<div class="col-xs-12">
 						<button type="submit" class="cd-btn my-btn">Send it</button>                              
+					</div>
+					<div class="server-message"> 
+						A new book has been created successfully!
 					</div>
 				</form>  
 			</div>
