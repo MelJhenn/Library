@@ -20,3 +20,21 @@ section{
     top: 15px;
     display: none;
 }
+.btn-edit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.ui-dialog{
+    z-index: 100;
+    width: 500px !important;
+}
+.ui-widget-overlay{
+    background: black;
+    opacity: 0.5 ;
+}
+.ui-dialog-titlebar-close {
+    background-image: url("http://code.jquery.com/ui/1.9.2/themes/base/images/ui-icons_222222_256x240.png");
+    background-position: -97px -129px;
+    
+}

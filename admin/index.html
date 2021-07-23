@@ -13,16 +13,14 @@
 	<!-- stylesheets css -->
   	<link rel="stylesheet" href="css/vegas.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">  
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.css">
     <!-- javscript js -->
     <script src="js/jquery.js"></script>
-
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/vegas.min.js"></script>
-
     <script src="js/main.js"></script>
-
-
-    
+	
 </head>
 <body>
 	<section class="tm-bg-purple tm-section">
@@ -64,6 +62,11 @@
 			</div>
 		</div>
 	</section>
+	<button id="btn-edit" type="button" class="btn btn-primary btn-edit">Edit</button>
+	<div id="dialog" title="Search to Edit">
+		<p>Type characters to Search</p>
+		<input type="text" id="search" name="search" class="form-control" placeholder="Title, author, genres or description" required/>
+	</div>
 	<script src="js/bootstrap.min.js"></script>     
 </body>
 </html>

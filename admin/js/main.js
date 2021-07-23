@@ -13,6 +13,25 @@ $(document).ready(function() {
           transition: [ 'zoomOut', ]
       });
     });  
+   // $("#dialog").dialog({
+        //autoOpen : false, modal : true, show : "blind", hide : "blind"
+    //});
+    $("#dialog").dialog({
+        autoOpen: false,
+        show: {
+            effect: "blind",
+            duration: 1000
+        },
+        modal: true, 
+        hide: {
+            effect: "explode",
+            duration: 1000
+        }
+    });
+    $("#btn-edit").click(function() {
+        $("#dialog").dialog("open");
+        return false;
+    });
     $("#idForm").submit(function(e) {
         e.preventDefault(); 
         var form = $(this);
