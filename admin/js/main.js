@@ -53,7 +53,7 @@ $(document).ready(function() {
     $('#search').on('input',e=>{
         if ($("#search").val().length<3)
             return;
-        $.getJSON("http://localhost:4000/search?q="+encodeURIComponent(this.value), function(books){
+        $.getJSON("http://localhost:4000/search?q="+encodeURIComponent($("#search").val()), function(books){
             books.forEach (each => {
                 console.log(each);
             });
