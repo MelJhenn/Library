@@ -50,4 +50,14 @@ $(document).ready(function() {
             }
         });
     });
+    $('#search').on('input',e=>{
+        if (this.value.length<3)
+            return;
+        $.getJSON("http://localhost:4000/search?q="+encodeURIComponent(this.value), function(books){
+            books.forEach (each => {
+                console.log(each);
+            });
+        });
+         
+    });
 }) 
